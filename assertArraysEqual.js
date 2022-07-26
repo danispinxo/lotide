@@ -18,7 +18,3 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 4], [1, 2, 3]);
-assertArraysEqual([1, 2, '3'], [1, 2, 3]);
-assertArraysEqual(["Hi", "I'm", "Dani"], ["Hi", "I'm", "Dani"]);
-assertArraysEqual(["Hi", "I'm", "Dani"], ["Hi", "I'm", "Jesse"]);
