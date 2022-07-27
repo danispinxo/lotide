@@ -17,7 +17,7 @@ const eqArrays = function(actual, expected) {
       }
     }
   }
-  return true
+  return true;
 };
 
 console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
