@@ -12,7 +12,11 @@ const eqArrays = function(actual, expected) {
     return false;
   } else {
     for (let i = 0; i < actual.length; i++) {
-      if (actual[i] !== expected[i]) {
+      if (Array.isArray(actual[i])) {
+        if (!eqArrays(actual[i], expected[i])) {
+          return false
+        }
+      } else if (actual[i] !== expected[i]) {
         return false;
       }
     }
@@ -20,12 +24,12 @@ const eqArrays = function(actual, expected) {
   return true;
 };
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
-console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
-
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
-
-console.log(eqArrays(["2", 3 ], ["2", 3, 4])); // => false
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+assertEqual(eqArrays(["2", 3 ], ["2", 3, 4]), false);
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true);
+assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false);
+assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false);
