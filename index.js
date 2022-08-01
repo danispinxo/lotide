@@ -5,6 +5,7 @@ const eqArrays = require('./eqArrays');
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
 const eqObjects = require('./eqObjects');
+const countLetters = require('./countLetters');
 
 module.exports = {
   head,
@@ -13,5 +14,6 @@ module.exports = {
   eqArrays,
   assertArraysEqual,
   assertEqual,
-  eqObjects
+  eqObjects,
+  countLetters
 };
