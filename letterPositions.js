@@ -1,22 +1,3 @@
-const eqArrays = function(actual, expected) {
-  let match = true;
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      match = false;
-    }
-  }
-  return match;
-};
-
-const assertArraysEqual = function(array1, array2) {
-
-  if (eqArrays(array1, array2)) {
-    console.log(`👍 Assertion Passed! ${array1} and ${array2} are equal!`);
-  } else {
-    console.log(`👎 Assertion Failed. ${array1} and ${array2} are not equal.`);
-  }
-};
-
 const letterPositions = function(str) {
   let lowerCaseString = str.toLowerCase();
   let sentence = "";
@@ -41,6 +22,4 @@ const letterPositions = function(str) {
   return results;
 };
 
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("dude").d, [0, 2]);
-assertArraysEqual(letterPositions("Dani is coding").d, [0,8]);
+module.exports = letterPositions;

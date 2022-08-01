@@ -8,6 +8,7 @@ const eqObjects = require('./eqObjects');
 const countLetters = require('./countLetters');
 const flatten = require('./flatten');
 const countOnly = require('./countOnly');
+const letterPositions = require('./letterPositions');
 
 module.exports = {
   head,
@@ -19,5 +20,6 @@ module.exports = {
   eqObjects,
   countLetters,
   flatten,
-  countOnly
+  countOnly, 
+  letterPositions
 };
