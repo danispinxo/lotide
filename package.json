@@ -8,7 +8,7 @@
   },
   "name": "@danispin/lotide",
   "description": "A mini clone of the [Lodash](https://lodash.com) library.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "directories": {
     "test": "test"
