@@ -10,6 +10,10 @@ const flatten = require('./flatten');
 const countOnly = require('./countOnly');
 const letterPositions = require('./letterPositions');
 const findKeyByValue = require('./findKeyByValue');
+const findKey = require('./findKey');
+const map = require('./map.js');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
 
 module.exports = {
   head,
@@ -23,5 +27,9 @@ module.exports = {
   flatten,
   countOnly, 
   letterPositions,
-  findKeyByValue
+  findKeyByValue,
+  findKey,
+  map, 
+  takeUntil,
+  without
 };

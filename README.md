@@ -38,3 +38,7 @@ The following functions are currently implemented:
 * `countOnly(...)`: creates an object from an array that counts how many times each item appears in the array
 * `letterPositions(...)`: returns the indexes of each appearance of a given letter in a string
 * `findKeyByValue(...)`: returns a key from an object when given the key's value
+* `findKey(...)`: returns a key from an object when given various criteria
+* `map(...)`: alters an array according to a supplied function
+* `takeUntil(...)`: returns part of an array until it meets a supplied function
+* `without(...): returns a supplied array, with a supplied item removed
