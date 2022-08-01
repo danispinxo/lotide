@@ -7,6 +7,7 @@ const assertEqual = require('./assertEqual');
 const eqObjects = require('./eqObjects');
 const countLetters = require('./countLetters');
 const flatten = require('./flatten');
+const countOnly = require('./countOnly');
 
 module.exports = {
   head,
@@ -17,5 +18,6 @@ module.exports = {
   assertEqual,
   eqObjects,
   countLetters,
-  flatten
+  flatten,
+  countOnly
 };
