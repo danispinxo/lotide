@@ -15,4 +15,3 @@ describe("#head", () => {
     assert.strictEqual(head([]), "This array is empty!");
   });
 });
-
